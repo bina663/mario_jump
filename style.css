@@ -1,0 +1,73 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background-color: #141414;
+}
+
+.border-game{
+    border: 1px solid black;
+    background-color: aquamarine;
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+.tree{
+    position: absolute;
+    bottom: 0;
+    height:30px;
+    width:100%;
+}
+.pipe{
+    right: 0px;
+    width: 40px;
+    animation:animationPipe 2.5s infinite linear;
+}
+
+.pipe, .mario{
+    bottom:30px;
+    position: absolute;
+    background-color: aquamarine;
+}
+
+@keyframes animationPipe{
+    from{
+        right:-20%;
+    }
+    to{
+        right:100%;
+    }
+}
+
+.mario{
+    left: 15px;
+    width:60px;
+}
+
+.jump{
+    animation:jump 500ms infinite ease-out;
+}
+
+@keyframes jump {
+    0%{
+        bottom:30px;
+    }
+    40%{
+        bottom:180px
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom:180px
+    }
+    100%{
+        bottom:30px
+    }
+    
+}
+.message{
+    color: white;
+}
